@@ -10,14 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Warm Neutrals (Tailwind's Stone) with a muted Teal accent for a professional and calm academic feel. -->
-    <!-- Application Structure Plan: A slide-based presentation controlled by navigation buttons. Each major section of the report is a slide, ensuring a focused, step-by-step information flow. This structure is ideal for a formal presentation, guiding the audience through the content linearly. Interactions (charts, accordions) are contained within slides to enrich the content of each step. -->
+    <!-- Application Structure Plan: A 7-slide presentation. The flow is: Title -> Profile -> Justification -> Competencies -> Content -> Methodology -> Evaluation. This creates a logical narrative, introducing the topic, the presenter, the "why," the "what," and the "how." -->
     <!-- Visualization & Content Choices: 
-        - Report Info: Course Identification, Justification. Goal: Inform/Introduce. Viz/Method: Static text and stat cards on Slide 1.
-        - Report Info: Candidate Profile. Goal: Establish credibility. Viz/Method: Two-column text layout on Slide 2.
-        - Report Info: Competencies. Goal: Detail skills. Viz/Method: Two-column text layout on Slide 3.
-        - Report Info: Thematic Units & Hour Distribution. Goal: Organize & Compare. Viz/Method: Accordion list and a stacked bar chart (Chart.js) on Slide 4. Interaction: Click to expand units, hover for chart details.
-        - Report Info: Methodology. Goal: Explain approach. Viz/Method: Three-column card layout with icons on Slide 5.
-        - Report Info: Evaluation & Resources. Goal: Inform on assessment. Viz/Method: Donut chart (Chart.js) and text list on Slide 6.
+        - Slide 1: Title. Goal: Introduce. Viz/Method: Minimalist title screen.
+        - Slide 2: Candidate Profile. Goal: Establish credibility. Viz/Method: Two-column text layout.
+        - Slide 3: Justification. Goal: Explain purpose. Viz/Method: Focused text block.
+        - Slide 4: Competencies. Goal: Detail skills. Viz/Method: Two-column text layout.
+        - Slide 5: Thematic Units & Hours. Goal: Organize & Compare. Viz/Method: Accordion list and a stacked bar chart (Chart.js).
+        - Slide 6: Methodology. Goal: Explain approach. Viz/Method: Three-column card layout.
+        - Slide 7: Evaluation & Resources. Goal: Inform on assessment. Viz/Method: Donut chart (Chart.js) and text list.
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
@@ -83,7 +84,7 @@
                 Lógica y Algoritmos I
             </div>
             <div id="slide-counter" class="text-sm font-medium text-stone-500">
-                Diapositiva 1 / 6
+                Diapositiva 1 / 7
             </div>
         </div>
     </header>
@@ -93,33 +94,7 @@
         <!-- Slide 1: Inicio -->
         <div class="slide active flex-col justify-center items-center">
             <section class="text-center w-full">
-                <h1 class="text-4xl md:text-6xl font-bold text-stone-800 leading-tight">Propuesta Pedagógica</h1>
-                <h2 class="text-2xl md:text-4xl font-semibold text-teal-600 mt-2">Lógica y Algoritmos I</h2>
-                <p class="mt-6 max-w-3xl mx-auto text-lg text-stone-600">
-                    Una exploración interactiva del plan de estudios diseñado para construir las bases del pensamiento computacional y la resolución de problemas en la era digital.
-                </p>
-                <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 w-full max-w-4xl mx-auto">
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                        <span class="text-3xl font-bold text-teal-600">3</span>
-                        <p class="text-stone-500 mt-1">Créditos</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                        <span class="text-3xl font-bold text-teal-600">64</span>
-                        <p class="text-stone-500 mt-1">Horas Presenciales</p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                        <span class="text-3xl font-bold text-teal-600">1er</span>
-                        <p class="text-stone-500 mt-1">Semestre</p>
-                    </div>
-                     <div class="bg-white p-4 rounded-lg shadow-md text-center">
-                        <span class="text-3xl font-bold text-teal-600">160</span>
-                        <p class="text-stone-500 mt-1">Horas Totales</p>
-                    </div>
-                </div>
-                <div class="mt-12 text-left max-w-3xl mx-auto bg-white p-6 rounded-lg shadow">
-                     <h3 class="font-bold text-xl mb-2 text-stone-700">Justificación del Curso</h3>
-                     <p class="text-stone-600">En un mundo impulsado por la tecnología, es imperativo que los futuros profesionales desarrollen un pensamiento lógico robusto. Este curso sienta las bases para analizar problemas, diseñar soluciones eficientes y comprender el lenguaje de las máquinas, habilidades cruciales en todas las áreas de la ingeniería y más allá.</p>
-                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-teal-600">Lógica y Algoritmos I</h1>
             </section>
         </div>
 
@@ -167,7 +142,19 @@
             </section>
         </div>
 
-        <!-- Slide 3: Competencias -->
+        <!-- Slide 3: Justificación -->
+        <div class="slide flex-col justify-center items-center">
+            <section class="w-full">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Justificación del Curso</h2>
+                </div>
+                 <div class="text-left max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                     <p class="text-stone-700 text-lg leading-relaxed">En un mundo impulsado por la tecnología, es imperativo que los futuros profesionales desarrollen un pensamiento lógico robusto. Este curso sienta las bases para analizar problemas, diseñar soluciones eficientes y comprender el lenguaje de las máquinas, habilidades cruciales en todas las áreas de la ingeniería y más allá.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Slide 4: Competencias -->
         <div class="slide flex-col justify-center items-center">
             <section class="w-full">
                 <div class="text-center mb-12">
@@ -193,7 +180,7 @@
             </section>
         </div>
 
-        <!-- Slide 4: Contenido -->
+        <!-- Slide 5: Contenido -->
         <div class="slide flex-col justify-center items-center">
             <section class="w-full bg-stone-100 rounded-2xl p-8">
                 <div class="text-center mb-12">
@@ -213,7 +200,7 @@
             </section>
         </div>
 
-        <!-- Slide 5: Metodologia -->
+        <!-- Slide 6: Metodologia -->
         <div class="slide flex-col justify-center items-center">
             <section class="w-full">
                 <div class="text-center mb-12">
@@ -240,7 +227,7 @@
             </section>
         </div>
 
-        <!-- Slide 6: Evaluacion -->
+        <!-- Slide 7: Evaluacion -->
         <div class="slide flex-col justify-center items-center">
             <section class="w-full bg-stone-100 rounded-2xl p-8">
                 <div class="text-center mb-12">
