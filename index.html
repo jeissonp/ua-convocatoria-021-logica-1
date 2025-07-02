@@ -10,15 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Warm Neutrals (Tailwind's Stone) with a muted Teal accent for a professional and calm academic feel. -->
-    <!-- Application Structure Plan: A 7-slide presentation. The flow is: Title -> Profile -> Justification -> Competencies -> Content -> Methodology -> Evaluation. This creates a logical narrative, introducing the topic, the presenter, the "why," the "what," and the "how." -->
+    <!-- Application Structure Plan: An 8-slide presentation. The flow is: Title -> Profile -> Justification -> Competencies -> Learning Outcomes -> Content -> Methodology -> Evaluation. This creates a logical narrative. -->
     <!-- Visualization & Content Choices: 
         - Slide 1: Title. Goal: Introduce. Viz/Method: Minimalist title screen.
         - Slide 2: Candidate Profile. Goal: Establish credibility. Viz/Method: Two-column text layout.
         - Slide 3: Justification. Goal: Explain purpose. Viz/Method: Focused text block.
         - Slide 4: Competencies. Goal: Detail skills. Viz/Method: Two-column text layout.
-        - Slide 5: Thematic Units & Hours. Goal: Organize & Compare. Viz/Method: Accordion list and a stacked bar chart (Chart.js).
-        - Slide 6: Methodology. Goal: Explain approach. Viz/Method: Three-column card layout.
-        - Slide 7: Evaluation & Resources. Goal: Inform on assessment. Viz/Method: Donut chart (Chart.js) and text list.
+        - Slide 5: Learning Outcomes. Goal: Specify abilities. Viz/Method: Styled list.
+        - Slide 6: Thematic Units & Hours. Goal: Organize & Compare. Viz/Method: Accordion list and a stacked bar chart (Chart.js).
+        - Slide 7: Methodology. Goal: Explain approach. Viz/Method: Three-column card layout.
+        - Slide 8: Evaluation & Resources. Goal: Inform on assessment. Viz/Method: Donut chart (Chart.js) and text list.
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
@@ -84,7 +85,7 @@
                 Lógica y Algoritmos I
             </div>
             <div id="slide-counter" class="text-sm font-medium text-stone-500">
-                Diapositiva 1 / 7
+                Diapositiva 1 / 8
             </div>
         </div>
     </header>
@@ -179,8 +180,27 @@
                 </div>
             </section>
         </div>
+        
+        <!-- Slide 5: Resultados de Aprendizaje -->
+        <div class="slide flex-col justify-center items-center">
+            <section class="w-full">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Resultados de Aprendizaje</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-stone-600">Al finalizar el curso, el estudiante estará en la capacidad de:</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                    <ul class="space-y-4 text-stone-700 text-lg">
+                        <li class="flex items-start"><span class="text-teal-500 mr-3 mt-1">✔</span>Analizar problemas del mundo real para descomponerlos en pasos lógicos y secuenciales.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-3 mt-1">✔</span>Diseñar soluciones algorítmicas claras y eficientes utilizando diagramas de flujo y pseudocódigo.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-3 mt-1">✔</span>Implementar estructuras de control (secuenciales, condicionales, repetitivas) para dirigir el flujo de un programa.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-3 mt-1">✔</span>Utilizar arreglos (vectores y matrices) para almacenar y manipular colecciones de datos de manera efectiva.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-3 mt-1">✔</span>Traducir algoritmos diseñados a un lenguaje de programación de alto nivel para crear programas funcionales.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
 
-        <!-- Slide 5: Contenido -->
+        <!-- Slide 6: Contenido -->
         <div class="slide flex-col justify-center items-center">
             <section class="w-full bg-stone-100 rounded-2xl p-8">
                 <div class="text-center mb-12">
@@ -200,7 +220,7 @@
             </section>
         </div>
 
-        <!-- Slide 6: Metodologia -->
+        <!-- Slide 7: Metodologia -->
         <div class="slide flex-col justify-center items-center">
             <section class="w-full">
                 <div class="text-center mb-12">
@@ -227,7 +247,7 @@
             </section>
         </div>
 
-        <!-- Slide 7: Evaluacion -->
+        <!-- Slide 8: Evaluacion -->
         <div class="slide flex-col justify-center items-center">
             <section class="w-full bg-stone-100 rounded-2xl p-8">
                 <div class="text-center mb-12">
